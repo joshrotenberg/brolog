@@ -14,7 +14,7 @@ access to syslog because I'm a dinosaur, OK?
 (ns your.ns
     (:use brolog.core))
 
-(init-brolog log-local7)
+(init-logging "myapp" log-local7)
 
 ;; after init, the interface looks like core.tools logging
 
