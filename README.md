@@ -22,6 +22,13 @@ access to syslog because I'm a dinosaur, OK?
 (info "something informational")
 ```
 
+To log to a different syslog facility than the one you initialized brolog with:
+
+```clojure
+(binding [brolog.logging/*logging-facility* log-local1]
+  (info "this message is logged to the local7 facility"))
+```
+
 ## License
 
 Copyright (C) 2012 Josh Rotenberg
